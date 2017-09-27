@@ -1,0 +1,6 @@
+web:
+    image: rpi-nginx
+    ports:
+        - "8081:80"
+    volumes:
+        - ./data:/usr/share/nginx/html:ro

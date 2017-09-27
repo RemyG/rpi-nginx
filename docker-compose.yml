@@ -1,6 +1,9 @@
-web:
+version: '3'
+services:
+  web:
+    build: .
     image: rpi-nginx
     ports:
-        - "8081:80"
+      - "8081:80"
     volumes:
-        - ./data:/usr/share/nginx/html:ro
+      - ./data:/usr/share/nginx/html:ro
